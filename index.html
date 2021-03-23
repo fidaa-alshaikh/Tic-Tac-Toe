@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe Game</title>
+    <link rel = "stylesheet" href = "style.css" />
+</head>
+
+
+<body>
+
+    <div class="modal">
+        <div class="contents">
+        <!-- <span class="close">X</span> -->
+        <h1>Tic Tac Toe</h1>
+        <h3>Welcome to the game!</h3>
+        <div class="instruction">
+        <h4>Instructions:</h4>
+        <li>The game is played on 3x3 grid.</li>
+        <li>Players take turns putting their marks in empty squares.</li>
+        <li>The first player to get 3 of her marks in a row (up, down, across, or diagonally) is the winner.</li>
+        <li>The game ends in a tie, if no player has 3 marks in a row.</li>
+        <li>Player 1 gets: X or Heart, Player 2 gets: O or flower.</li>
+        </div>
+        <br> 
+    
+        <div class="selectToken">
+        <div>Select Tokens: </div>
+        <select id="myselect">
+            <option value="0">X/O</option>
+            <option value="1">Heart/Flower</option>
+        </select>
+       </div>
+        <button class="startBtn">Start</button>
+    </div>
+    
+    </div>
+
+    <nav>
+        <!-- <div class="tab tab1">Change Token</div> -->
+        <div class="tab tab2">Restart</div>
+        <div class="tab tab3">Stop Sound</div>
+            </nav>
+
+    <section>
+        <br>
+        
+<audio autoplay loop id="sound"><source src="game.music" type="audio/mpeg" /></audio>
+
+<div class="message turn">Start play!</div>
+
+<div id="gameBoard">
+<div class="box"><img></div>
+<div class="box"></div>
+<div class="box"></div>
+<div class="box"></div>
+<div class="box"></div>
+<div class="box"></div>
+<div class="box"></div>
+<div class="box"></div>
+<div class="box"></div>
+</div>
+    </section>
+
+    <div class=section2>
+        <div class="message won"></div>
+        <div calss=score>
+            <p class="player playerOneScore">Player 1 score: <span></span> </p>
+            <p class="player playerTwoScore">Player 2 score:  <span></span> </p>
+            <!-- <p class="player round">Round:  <span>0</span> </p> -->
+        </div>
+    </div>
+    
+    <footer>
+        <p>Thank you for playing my game! <a href="https://git.generalassemb.ly/fidaa" target="_blank">my Github</a></p>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

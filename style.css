@@ -1,0 +1,139 @@
+body{
+    max-width: 1000 vw;
+    margin: auto;
+
+}
+
+nav {
+    display:flex;
+    justify-content: flex-end;
+    justify-items: center;
+    background-color: rgb(39, 43, 46);
+    padding: 15px;
+    color:white;
+}
+nav .tab{
+    padding: 0 40px;
+    cursor: pointer;
+}
+
+section{
+     display:flex;
+    flex-direction: column;
+    text-align: center; 
+    align-items: center;
+    background-color: rgb(219, 213, 213);
+    height: 550px;
+}
+
+ .message{
+    padding:3px 100px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 100px;
+    height: 20px;
+    background-color: white;
+    margin-bottom: 20px;
+    
+}
+.section2 .won{
+    color:rgb(145, 28, 28);
+    font-size: 19.7px;
+    font-weight: bold;
+} 
+
+#gameBoard{
+    display: grid;
+    grid-template-columns:repeat(3 , 150px) ;
+    grid-template-rows: repeat(3 , 150px);
+    align-content: center;
+    
+}
+
+
+#gameBoard .box{
+    border: 1px solid #333333;
+    background-color: rgb(226, 195, 195);
+    cursor: pointer;
+    line-height: 150px;
+    font-size: 0%;
+}
+
+.section2{
+    padding:25px 0px;
+    display:flex;
+    flex-direction: column;
+    text-align: center; 
+    align-items: center;
+    background-color: rgb(241, 235, 235);
+}
+
+
+.player{
+    display: inline;
+    margin:70px;
+    font-size: 20px;
+}
+.player span{
+    color:rgb(145, 28, 28);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+footer, footer a{
+    background-color: rgb(39, 43, 46);
+    padding: 0.1px;
+    color:white;
+    font-size: 13px;
+    padding-left: 5px;
+}
+
+
+
+
+.modal{
+display: block;
+width: 100%;
+height: 100%;
+position: fixed;
+background-color: rgba(59, 57, 57, 0.7);
+
+  
+}
+.modal .contents{
+    background-color: rgb(231, 242, 252);
+    width: 50%; 
+    height: 400px;
+    margin: 12% auto;
+    border: 2px solid rgb(59, 54, 54);
+    border-radius: 6%;
+    text-align: center;
+    padding-top: 25px;
+    overflow: auto;
+}
+
+.modal .contents .startBtn{
+background-color: rgb(103, 163, 63);
+border:none;
+border-radius: 10%;
+padding: 10px 30px;
+color:white;
+cursor: pointer;
+}
+.modal .contents .startBtn:hover{
+background-color: #3e8e41;
+}
+
+.instruction{
+    text-align: left;
+    padding-left: 30px;
+}
+.selectToken{
+    display: flex;
+    padding-left: 35%;
+    margin-bottom: 4%;
+}
+
+
+
